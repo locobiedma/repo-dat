@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">    
+   </head>
+   <body>
+        <p>Adder...<span id='op'>5+3</span>
+        <span id="res"></span> <a href="">Add!</a></p>
+    
+        <script type="text/javascript" charset="utf-8">
+       (function(){
+         var words = [
+           ["The table", "My uncle", "A book", "The road", "Music"],
+           ["talks", "knows", "thinks", "works", "runs", "eats"],
+           ["fast", "low", "far away", "hard", "in pijama", "while dances cha-cha-cha"],
+           ["perro", "salchichon", "zapato", "pepe", "platano", "rock and roll"]
+         ];
+         var sentence = document.getElementById("sentence");
+         var newwords = [];
+         for(var i=0;i<words.length;i+=1){
+           newwords.push(words[i][Math.floor(Math.random() * words[i].length)]);
+         }
+         sentence.innerHTML = newwords.join(" ");
+       }());
+     </script>
+     
+   </body>
+</html>
