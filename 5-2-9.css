@@ -1,15 +1,18 @@
-#menu {
-        background-color: #192666;
-        padding-top: 1em;
-        margin: 0;
-        text-align: center; 
+#menu{
+	background-color: #192666;
+	margin: 0;
+	padding-top: 5px;
+	
 }
 
-#menu li { display: inline; }
+#menu ul li {
+        display: inline-block;
+}
 
-#menu #menu_principal a:hover{
-        color: #B5C4E3;
-        background-color: #253575;
+#menu ul li a{
+	background-color: #253575;
+	color: #B5C4E3;
+	font-weight: bold;
 }
 
 #pie{ 
@@ -71,15 +74,18 @@
 }
 
 
-#lista_columna2 li{
+#lista_columna2 li {
 	border-bottom: solid 1px #E0E8FA;
 	Padding: 3px 0 3px 22px;
 	background-image: url(css-ejercicio10-icono-elemento.gif);
         background-repeat: no-repeat;
+        list-style:none
+        
 }
 
 #lista_columna2 a:hover{
         color: 192666;
         background-color:  #E0E8FA;
+        
 }
 
