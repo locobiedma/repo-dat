@@ -12,9 +12,9 @@
 	       	function sumar (optag, cambio) {
 		 	var operacion = document.getElementById(optag);
 		 	var operandos = operacion.innerHTML.split ("+");
-		 	var resultado = parseInt(operandos[0]) +
+		 	var result = parseInt(operandos[0]) +
 		     	parseInt(operandos[1]);
-		 	changer (cambio, '=' + resultado);
+		 	changer (cambio, '=' + result);
 	       	}
        
      	</script>
