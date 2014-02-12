@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     		<title>Calculadora binaria</title>
+   	</head>
+   	<body>
+   		<style type="text/css" media="screen">
+   			h1{
+   				padding: 8px;
+   			}
+			#calculadora{
+				text-align: center;
+				background-color: #BDB76B;
+				width: 25em;
+				height: 10em;
+				margin: 0 auto;
+			}
+			
+			a{
+				margin: 10px;
+				border: solid 3px rgba(21,11,11, 0.2);	
+				padding: 3px;
+				
+			}
+   	 	</style>
+   	 	
+   	 	<div id = "calculadora">
+	     		<h1>Calculadora binaria</h1>
+	     		<p>	
+	     			<a href="javascript:uno()">1</a>
+	     			<a href="javascript:cero()">0</a>
+	     			<a href="javascript:mas()">+</a>
+	     			<a href="javascript:igual()">=</a>
+	     		</p>     		
+	     		<span id="display"></span>
+	     	</div>
+     
+     		<script type="text/javascript" charset="utf-8">
+       			
+       			
+       			function uno() {
+				var element = document.getElementById('display');
+          			element.innerHTML = '1';
+       			}
+       			
+       			function cero() {
+				var element = document.getElementById('display');
+          			element.innerHTML = '0';
+       			}
+       			
+       			function mas() {
+				var element = document.getElementById('display');
+				op1 = element.innerHTML;
+				console.log("el primer operando es: " + op1);
+				if (op1 == ""){
+					element.innerHTML = "Seleccione el primer operando";
+				}
+				else{
+					element.innerHTML = "";	
+				}
+       			}
+       			
+       			function igual() {
+				var element = document.getElementById('display');
+				op2 = element.innerHTML;
+				console.log("el primer operando es: " + op1 + " y el segundo es: " + op2);
+				var resultado;
+				if (op1 == 0 && op2 == 0)
+					resultado = 0; 	
+				else if (op1 == 1 && op2 == 0)
+					resultado = 1;
+				else if (op1 == 0 && op2 == 1)
+					resultado = 1;
+				else if (op1 == 1 && op2 == 1)
+					resultado = 10;
+				else
+					resultado = "SINTAX ERROR"
+					
+				element.innerHTML = "= " + resultado;				
+       			}
+     		</script>
+   	</body>
+</html>
