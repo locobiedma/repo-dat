@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css3_2.css"/>
+    <title>Escuela Técnica Superior de Ingenieros de Telecomunicación - Universidad Rey Juan Carlos</title>
+    <link rel="stylesheet" href="concurso.css">
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+  <div id="todo">
+    <div id="principal">
+      <div id="welcome">Le damos la bienvenida a la <span class="institucion" id="etsit">Escuela Técnica Superior de Ingenieros de Telecomunicación</span> de la <span class="institucion" id="urjc">Universidad Rey Juan Carlos</span>
+      </div>
+    </div>
+    <div id="secundario">
+      <div class="descripcion" id="localizacion">
+        La Escuela Superior de Ingeniería de Telecomunicación se encuentra en el Campus de Fuenlabrada, que está ubicado en el municipio de <span class="ciudad" id="fuenla">Fuenlabrada</span>, al sur de <span class="ciudad" id="madrid">Madrid</span>. Dista del centro de la capital de España 25 kilómetros y está situado en la zona oeste del referido municipio, concretamente entre la autovía de Extremadura (N V) y la de <span class="ciudad" id="toledo">Toledo</span> (N 401). La vía <span class="ciudad" id="pinto">Pinto</span>-<span class="ciudad" id="mostoles">Móstoles</span> comunica ambas autovías.
+     </div>
+     <div class="descripcion" id="acceso">
+       Nuestro Campus se encuentra bien comunicado, tanto con las coronas urbanas centrales de <span class="ciudad" id="madrid">Madrid</span>, como con el resto del área metropolitana capitalina, y también con los demás municipios sureños de la Comunidad: <span class="ciudad" id="alcorcon">Alcorcón</span>, <span class="ciudad" id="mostoles">Móstoles</span> y <span class="ciudad" id="getafe">Getafe</span>. Tanto el Metro Sur, que tiene una salida insertada en el campus (<span class="estacion">Hospital de Fuenlabrada</span>), como los trenes de cercanías de RENFE (<span class="estacion">Estación de Fuenlabrada</span>), y los autobuses de <span class="ciudad" id="fuenla">Fuenlabrada</span> (L1, L2, L3, L4, L5 y L6), dan testimonio de estas conexiones. Enfrente de las instalaciones universitarias está el <span class="estacion">Hospital de Fuenlabrada</span> de reciente apertura.
+      </div>
+      <div id="empty">
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
