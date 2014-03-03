@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     	<title>Sumador</title>
+     	
+     	<style>
+     	        #a {
+     	                border: solid 2px black;
+     	        }
+     	</style>
+   </head>
+   <body>
+	<canvas id="a" width="300" height="225"></canvas>
+        
+        
+   </body>
+   <script type="text/javascript" charset="utf-8">
+     	
+   		function draw_b() {
+                        var b_canvas = document.getElementById("a");
+                        var b_context = b_canvas.getContext("2d");
+                        b_context.fillStyle = 'red';
+                        b_context.fillRect(0, 0, 30, 25);
+                 }
+       
+        draw_b();
+     	</script>
+</html>
+
+
+
+
