@@ -1,0 +1,6 @@
+jQuery(document).ready(function() {
+    $("#orderedlist li").append(" -------> texto que incluyo en la funcion texto.js");
+    $("#orderedlist li").hover(function(){
+        $(this).append("---------> texto de inicio")
+    });
+});

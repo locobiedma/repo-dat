@@ -8,8 +8,6 @@
 <script src="jquery.min.js" type="text/javascript"></script>
 <script src="starterkit-custom.js" type="text/javascript"></script>
 <script src="texto.js" type="text/javascript"></script>
-<script src="colors.js" type="text/javascript"></script>
-
 
 </head>
 <body>
