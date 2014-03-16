@@ -1,22 +1,39 @@
+
+
 #calculadora{
-        background-color: red;
+        background-image: -ms-linear-gradient(top, #A1B4FF 0%, #5C30EF 100%);
+        background-image: -moz-linear-gradient(top, #A1B4FF 0%, #5C30EF 100%);
+        background-image: -o-linear-gradient(top, #A1B4FF 0%, #5C30EF 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #A1B4FF), color-stop(1, #5C30EF));
+        background-image: -webkit-linear-gradient(top, #A1B4FF 0%, #5C30EF 100%);
+        background-image: linear-gradient(top, #A1B4FF 0%, #5C30EF 100%);
         text-align: center;
-        width: 200px; 
-        height: 200px;
+        width: 600px; 
+        height: 400px;
         margin: 0 auto;
         border-radius: 25px;
+        border: solid;
+        margin-top: 10px;
 }
 
-#restar{}
-
-#calculadora #display{
-	margin-top: 500px;
+#display{
+	
+	margin-bottom:40px;
+	height: 90px;
 	padding: 5px;
-	background-color: white;
+	background-color: DarkGray;
 	border: solid 3px rgba(21,11,11, 0.2);
 	border-radius: 15px;
+	border: solid;
 }
 
-#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero{
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero, #sumar, #restar, #multiplicar, #dividir, #punto, #borrar, #igual{
 	margin: 4px;
+	width: 30px; 
+        height: 30px;
+}
+
+body{
+	background: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy10hYKl1bJ0q0_NVTGZ70VzZ4k4mFvZ2zqO5zyqRLM5wWRmlP) no-repeat center center fixed;
+	background-size: cover;
 }

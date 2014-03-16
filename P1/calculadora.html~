@@ -9,6 +9,7 @@
    </head>
    <body>
      <div id = "calculadora">
+     	     <br>
              <div id = "display"></div>
              <br>
              <button id = "siete">7</button>
@@ -27,8 +28,10 @@
              <button id = "sumar">+</button>
              <br>
              <button id = "cero">0</button>
+             <button id = "punto">.</button>
+             <button id = "borrar">C</button>
              <button id = "restar">-</button>
-             <br>
+             <br>             
              <button id = "igual">=</button>
      </div>
    </body>
