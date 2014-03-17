@@ -9,8 +9,7 @@
    </head>
    <body>
      <div id = "calculadora">
-     	     <br>
-             <div id = "display"></div>
+             <form><input type = "text" id = "display"></form>
              <br>
              <button id = "siete">7</button>
              <button id = "ocho">8</button>
