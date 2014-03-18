@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Geolocalizacion</title>
+     <script type="text/javascript" src="modernizr-latest.js"></script>
+      <script type="text/javascript" src="codigo.js"></script>
+   </head>
+   <body onload = "empezar()">
+        hola
+        <div id = "video"><div>
+   </body >
+</html>
