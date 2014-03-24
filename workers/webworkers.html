@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicio con WebWorkers</title>
+
+
+
+ </head>
+ <body>
+<br><br>
+
+<script>
+        var worker = new Worker('doWork.js');
+
+        worker.addEventListener('message', function(e) {
+                console.log('Worker said: ', e.data);
+        }, false);
+
+        worker.postMessage('Hello World'); // Send data to our worker.
+</script>
+
+
+ </body>
+</html>
