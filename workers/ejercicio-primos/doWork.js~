@@ -1,0 +1,3 @@
+self.addEventListener('message', function(e) {
+  self.postMessage("vete a la mierda");
+}, false);

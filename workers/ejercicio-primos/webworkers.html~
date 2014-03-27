@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicio calcular numeros primos con workers</title>
+
+ 
+
+
+ </head>
+ <body>
+  <form id="formulario" action="" method="POST">
+  Numero: <input type="text" name="input">
+  </form>
+  <button Buscar primos </button>
+  <p>Los numeros primos hasta el numero dado son: <span id="result"></span></p>
+
+	 <script>
+	var worker = new Worker('doWork.js');
+
+	worker.addEventListener('message', function(e) {
+  		document.getElementById('result').innerHTML = e.data.primelist;
+	}, false);
+
+	document.getElementById('formulario').addEventListener('submit', function(e) {
+		e.preventDefault();
+		worker.postMessage({'top': parseInt(document.getElementById("formulario").input.value)});
+	});
+  </script>
+ </body>
+</html>
