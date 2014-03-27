@@ -1,0 +1,91 @@
+#menu{
+	background-color: #192666;
+	margin: 0;
+	padding-top: 5px;
+	
+}
+
+#menu ul li {
+        display: inline-block;
+}
+
+#menu ul li a{
+	background-color: #253575;
+	color: #B5C4E3;
+	font-weight: bold;
+}
+
+#pie{ 
+        background-color: #192666;
+        clear: both; 
+        height: 40px;
+        padding-top: 8px;
+        margin-bottom: 50px;
+        margin-top: 15px;
+}
+
+#texto_pie{
+        color: #6685CC;
+        text-align: center;
+        
+}
+
+#cabecera{
+        background-image: url(css-ejercicio7.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100px;
+        background-color: #233C9B;
+}
+
+#cabecera #logo #texto_cabecera{
+        color: white;
+        font-size: 3em;
+        margin: 0px;
+        padding-top: 22px;
+        text-align: center;
+}
+
+#contenedor{
+	width: 770px;
+	margin: auto;
+}
+
+#columna1{
+	float: left;
+	width: 530px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+#columna2{
+	float: left;
+	width: 200px;
+	background-color: #CEDBF9;
+	margin-top: 5px;
+	background-image: url(css-ejercicio10-fondo-columna.gif);
+        background-repeat: no-repeat;
+}
+
+#lista_columna2{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+#lista_columna2 li {
+	border-bottom: solid 1px #E0E8FA;
+	Padding: 3px 0 3px 22px;
+	background-image: url(css-ejercicio10-icono-elemento.gif);
+        background-repeat: no-repeat;
+        list-style:none
+        
+}
+
+#lista_columna2 a:hover{
+        color: 192666;
+        background-color:  #E0E8FA;
+        
+}
+

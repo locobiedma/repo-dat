@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     	<title>Sumador</title>
+     	<script type="text/javascript" charset="utf-8">
+     	
+   		function changer (id, newValue) {
+         		var element = document.getElementById(id);
+         		element.innerHTML = newValue;
+	       	}
+	       	function sumar (optag, cambio) {
+		 	var operacion = document.getElementById(optag);
+		 	var operandos = operacion.innerHTML.split ("+");
+		 	var resultado = parseInt(operandos[0]) +
+		     	parseInt(operandos[1]);
+		 	changer (cambio, '=' + resultado);
+	       	}
+       
+     	</script>
+   </head>
+   <body>
+	<p>Adder... <span id='op'>5+3</span><span id='res'></span> <a href="javascript:sumar('op','res')">Add!</a></p>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

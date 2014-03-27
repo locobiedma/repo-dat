@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     		<title>Calculadora binaria</title>
+   	</head>
+   	<body>
+   	 	<div id = "calculadora">
+	     		<h1>copia texto</h1>
+	     		<FORM method="post">
+                                <P>
+                                        <LABEL for="nombre">Nombre: </LABEL>
+                                        <INPUT type="text" id="nombre"><BR>  
+                                        console.log("el nombre es: " + nombre);                     
+                                </P>
+                        </FORM>
+	     		<p>		     	
+	     			<a href="javascript:mas()">+</a>
+	     		</p>     		
+	     		<span id="display"></span>
+	     	</div>
+     
+     		<script type="text/javascript" charset="utf-8">
+       			
+       			function mas() {
+				var element = document.getElementById('display');
+				op1 = element.innerHTML;
+				conso le.log("el primer operando es: " + op1);
+				if (op1 == ""){
+					element.innerHTML = "Seleccione el primer operando";
+				}
+				else{
+					element.innerHTML = "";	
+				}
+       			}
+     		</script>
+   	</body>
+</html>

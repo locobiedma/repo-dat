@@ -2,16 +2,18 @@
 <html>
 	<body>
 		hola
-		<p>Count numbers: <output id="result"></output></p>
-		<button onclick="startWorker()">Start Worker</button> 
+
+		<button onclick="startWorker("hola")">Start Worker</button> 
 		<br><br>
 
 		<script>
 			function startWorker(){
-				console.log("hola");
 				var worker = new Worker('demo_workers.js');
+				worker.addEventListener('message', function(e) {
+  					console.log('Worker said: ', e.data);
+				}, false);
+
 				worker.postMessage('Hello World'); // Send data to our worker.
-				worker.terminate();
 			}
 
 		</script>
