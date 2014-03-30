@@ -1,0 +1,9 @@
+li.ui-state-default{ 
+ 	font-size : 20px;
+}
+
+div.ui-tabs-panel{
+	font-size : 15px;
+ 	font-family : georgia; 
+ 	font-style : italic;
+} 

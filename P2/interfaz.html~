@@ -1,0 +1,54 @@
+<!doctype html>
+
+<!--
+    Demo to use with the custom version of jQueryUI
+-->
+
+<html lang="us">
+	<head>
+    		<meta charset="utf-8">
+    		<title>SOCIOS</title>
+    		<link href="css/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    		<script src="js/jquery-1.10.2.js"></script>
+    		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    		<script src="interfaz.js"></script>
+    		<link href="interfaz.css" rel="stylesheet">
+    		<link rel="shortcut icon" type="image/x-icon" href="http://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&docid=Ye2m8r7jD4h3dM&tbnid=O7yi5HgqyFsoKM:&ved=0CAUQjRw&url=http%3A%2F%2Fvk.com%2Fid177352261&ei=VFg4U7H2KM6k0AW-4IDwAQ&bvm=bv.63808443,d.ZGU&psig=AFQjCNG-w7OQDgVrnMJk2fTl8OM_YgylIA&ust=1396287931688549" />
+  	</head>
+  
+  	<body>
+  		<div id="tabs">
+			<ul>
+ 				<li><a href="#tab1">Tab 1</a></li>
+ 				<li><a href="#tab2">Tab 2</a></li>
+ 				<li><a href="#tab3">Tab 3</a></li>
+ 				<li><a href="#tab4">Tab 4</a></li>
+			</ul>
+ 			<div id="tab1">HTML5facil BLog de la comunidad HTML5</div>
+ 			<div id="tab2">Otro Hola Mundo pero en jQueryUI</div>
+ 			<div id="tab3">Lorem ipsum</div>
+ 			<div id="tab4">Contenido pestaña 4</div>
+		</div> 
+  	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
