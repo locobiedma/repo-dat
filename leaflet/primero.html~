@@ -1,0 +1,24 @@
+<!doctype html>
+
+<!--
+    Demo to use with the custom version of jQueryUI
+-->
+
+<html lang="us">
+	<head>
+    		<meta charset="utf-8">
+    		<title>LEAFLET</title>
+    		<script src="primero.js"></script>
+    		<link rel="stylesheet" type="text/css" href="primero.css"/>
+
+  	</head>
+  
+  	<body>
+  		<div id="map">
+			
+  	</body>
+</html>
+
+
+
+
