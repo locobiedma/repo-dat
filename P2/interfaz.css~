@@ -6,4 +6,9 @@ div.ui-tabs-panel{
 	font-size : 15px;
  	font-family : georgia; 
  	font-style : italic;
+ 	color: black;
 } 
+
+#pestaña1{
+	border: solid;
+{

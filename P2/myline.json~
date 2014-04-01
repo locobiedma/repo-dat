@@ -1,0 +1,8 @@
+
+{
+"Socios": [
+{ "Nombre":"Manzana" , "avatar":10, "titulo": "titulo1", "contenido": "contenido1", "fecha": "fecha1" },
+{ "Nombre":"Pera" , "cantidad":20 , "titulo": "titulo2", "contenido": "contenido2", "fecha": "fecha2" },
+{ "Nombre":"Naranja" , "cantidad":30, "titulo": "titulo3", "contenido": "contenido3", "fecha": "fecha3" }
+]
+}
