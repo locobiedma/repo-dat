@@ -4,26 +4,69 @@ $(function() {
 
 $(function() {
 	$( "#accordion" ).accordion();
+	$( "#accordion2" ).accordion();
 });
-
+ 
+           
 $(document).ready(function() {
-    $("#pestana1").click(function(){
-	$.getJSON("myline.json", function(data) {
-	    var nombre = "";
-	    len = data.Socios.length;
-	    console.log("len es: " + len);
-	    
-	    for(i = 0; i<len; i++){
-	    	nombre = data.Socios[i].Nombre;
-	    	console.log("nombre es: " + nombre);
-	    	document.getElementById('accordion').innerHTML += "<h3>hola soy la cabecera</h3>";
-	    	document.getElementById('accordion').innerHTML += "<div>hola soy un div</div>";
-	    	//$('#accordion').append("<h3>hola soy la cabecera</h3>");
-	    	//$('#accordion').append("<div>hola soy un div</div>");
-	    } 
-	    $('#accordion').accordion('destroy');
-	    $('#accordion').accordion();
 
-	});
-    });
+        $.getJSON("update.json", function(data2) {
+                len = data2.Socios.length; //esta linea creo que la puedo quitar
+        }); 
+        
+        $.getJSON("timeline.json", function(data) {
+                if (len != 0){
+                        $('#cabecera').append('<button id = "boton">' + 'Tienes ' + len + ' mensajes pendientes' + '</button>' + '</br>'+ '</br>');
+                        
+                }
+                
+                $("#boton").click(function(){
+                        $.getJSON("update.json", function(data2) {
+                                for(i = 0; i<data2.Socios.length; i++){
+	                    	        nombre = data2.Socios[i].Nombre;
+                                        titulo = data2.Socios[i].titulo;
+                                        avatar = data2.Socios[i].avatar;
+                                        contenido = data2.Socios[i].contenido;
+                                        fecha = data2.Socios[i].fecha;
+	                            	
+	                            	$('#accordion').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG SRC="' + avatar+ '">' + '</h3>');
+	                            	$('#accordion').append('<div>' + contenido + '</br>' + fecha + '</div>');
+	                        } 
+	                        $('#accordion').accordion('destroy');
+	                        $('#accordion').accordion();
+	                });
+	                $('#cabecera').html('<span id = "vacio">' + 'No Tienes mensajes nuevos' + '</span>' + '</br>'+ '</br>');
+                });
+                
+                
+                for(i = 0; i<data.Socios.length; i++){
+	    	        nombre = data.Socios[i].Nombre;
+                        titulo = data.Socios[i].titulo;
+                        avatar = data.Socios[i].avatar;
+                        contenido = data.Socios[i].contenido;
+                        fecha = data.Socios[i].fecha;
+	            	
+	            	$('#accordion').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG SRC="' + avatar+ '">' + '</h3>');
+	            	$('#accordion').append('<div>' + contenido + '</br>' + fecha + '</div>');
+	        } 
+	        $('#accordion').accordion('destroy');
+	        $('#accordion').accordion();
+	        
+	        
+        });   
+        
+        $.getJSON("myline.json", function(data3) {
+                for(i = 0; i<data3.Socios.length; i++){
+	    	        nombre = data3.Socios[i].Nombre;
+                        titulo = data3.Socios[i].titulo;
+                        avatar = data3.Socios[i].avatar;
+                        contenido = data3.Socios[i].contenido;
+                        fecha = data3.Socios[i].fecha;
+	            	
+	            	$('#accordion2').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG SRC="' + avatar+ '">' + '</h3>');
+	            	$('#accordion2').append('<div>' + contenido + '</br>' + fecha + '</div>');
+	        } 
+	        $('#accordion2').accordion('destroy');
+	        $('#accordion2').accordion();
+        });   
 });

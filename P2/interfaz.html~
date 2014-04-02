@@ -18,17 +18,16 @@
   	<body>
   		<div id="tabs">
 			<ul>
- 				<li id = "pestana1"><a href="#tab1">Tab 1</a></li>
- 				<li><a href="#tab2">Tab 2</a></li>
+ 				<li id = "pestana1"><a href="#tab1">TIMELINE</a></li>
+ 				<li><a href="#tab2">MY LINE</a></li>
 			</ul>
 			
-	 			<div id="tab1">ESTE ES EL TIMELINE
-	 				<div id="accordion">
-		 				
-					</div>
-				</div>
+	 		<div id="tab1">
+	 		        <div id = "cabecera"></div>
+	 			<div id="accordion"></div>
+			</div>
 
- 			<div id="tab2">Otro Hola Mundo pero en jQueryUI</div>
+ 			<div id="tab2"></div>
 		</div> 
   	</body>
 </html>
