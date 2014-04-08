@@ -11,7 +11,7 @@ $(function() {
 $(document).ready(function() {
 
         $.getJSON("update.json", function(data2) {
-                len = data2.Socios.length; //esta linea creo que la puedo quitar
+                len = data2.Socios.length; 
         }); 
         
         $.getJSON("timeline.json", function(data) {
@@ -29,7 +29,7 @@ $(document).ready(function() {
                                         contenido = data2.Socios[i].contenido;
                                         fecha = data2.Socios[i].fecha;
 	                            	
-	                            	$('#accordion').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG SRC="' + avatar+ '">' + '</h3>');
+	                            	$('#accordion').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG height = "100" width = "100" SRC="' + avatar+ '">' + '</h3>');
 	                            	$('#accordion').append('<div>' + contenido + '</br>' + fecha + '</div>');
 	                        } 
 	                        $('#accordion').accordion('destroy');
@@ -46,7 +46,7 @@ $(document).ready(function() {
                         contenido = data.Socios[i].contenido;
                         fecha = data.Socios[i].fecha;
 	            	
-	            	$('#accordion').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG SRC="' + avatar+ '">' + '</h3>');
+	            	$('#accordion').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG height = "100" width = "100" SRC ="' + avatar+ '">' + '</h3>');
 	            	$('#accordion').append('<div>' + contenido + '</br>' + fecha + '</div>');
 	        } 
 	        $('#accordion').accordion('destroy');
@@ -63,7 +63,7 @@ $(document).ready(function() {
                         contenido = data3.Socios[i].contenido;
                         fecha = data3.Socios[i].fecha;
 	            	
-	            	$('#accordion2').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG SRC="' + avatar+ '">' + '</h3>');
+	            	$('#accordion2').append('<h3>' + nombre + ': ' + titulo + '</br>' + '<IMG height = "100" width = "100" SRC="' + avatar+ '">' + '</h3>');
 	            	$('#accordion2').append('<div>' + contenido + '</br>' + fecha + '</div>');
 	        } 
 	        $('#accordion2').accordion('destroy');
